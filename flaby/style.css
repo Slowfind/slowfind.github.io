@@ -262,7 +262,7 @@ h2 {
 }
 
 .pencil1 {
-	background-image: url("header/pencil 1.png");
+	background-image: url("header/pencil1.png");
 	background-repeat: no-repeat;
 	position: absolute;
   	left: -5px;
@@ -274,7 +274,7 @@ h2 {
 }
 
   .pencil2 {
-	background-image: url("header/pencil 2.png");
+	background-image: url("header/pencil2.png");
 	background-repeat: no-repeat;
 	position: absolute;
   	left: -5px;
