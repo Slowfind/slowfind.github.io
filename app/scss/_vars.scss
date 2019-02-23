@@ -1,0 +1,21 @@
+// Наиболее часто используемые //
+
+$default-font: 	"BariolRegular", sans-serif;
+$arial: 		"arial-ex" , sans-serif;
+$accent: 		#eb4f4e;
+$text: 	 		#d84948;
+$black:  		#232324;
+$green:  		#6cc372;
+$grey: 	 		#f0f0f0;
+$head: 	 	  	#f56262;
+$before-head: 	#f56262;
+
+
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 20px;
+$grid-columns: 24;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;

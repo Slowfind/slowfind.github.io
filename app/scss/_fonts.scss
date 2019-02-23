@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("arial-ex", "../fonts/Arial/ArialBold/ArialBold", 700);
+@include font-face("BariolRegular", "../fonts/Bariol/BariolRegular/BariolRegular", 400);
+
+

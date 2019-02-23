@@ -1,0 +1,190 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.talented .card {
+		min-width: 280px;
+		width: 100%;
+		margin: 20px;
+	}
+	.deck:nth-child(2) {
+		margin: auto;
+		margin-bottom: 30px;
+		.card-header {
+			min-height: 145px;
+		}
+	}
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	h1 {
+		font-size: 42px;
+	}
+
+	.smart h3 {
+		font-size: 22px;
+	}
+	.smart p {
+		font-size: 16px;
+		br {
+			display: none;
+		}
+	}
+	.talented .card {
+		min-width: 230px;
+	}
+	.deck {
+		max-width: 250px;
+	}
+	.deck .card-header h4 {
+		font-size: 30px;
+	}
+	.deck .card-footer span {
+    	top: 18px;
+    	font-size: 48px;
+    	&:before,
+    	&:after {
+    		font-size: 26px;
+    	}
+    	&:before {
+    		top: 10px;
+    	}
+	}
+	.latest blockquote {
+		font-size: 18px;
+	}
+	.elegant .carousel-elegant {
+		padding-bottom: 50px;
+	}
+
+	// BURGER MENU//
+	.top, .out {
+      display: block;
+    }
+    .menu {
+    	display: flex;
+    	flex-direction: column;
+    	padding-bottom: 2px;
+    }
+   .menu-close {
+      position: absolute;
+      display: none;
+      top: 0;
+      right: 0;
+      left:0;
+      margin:auto;
+      margin-top: 110px;
+      z-index: 1000;
+      overflow: auto;
+      text-align: center;
+      background-color: $before-head;
+      width: 100%;
+
+    }
+    .menu__item a{
+      display: block;
+      text-align: center;
+    }
+    
+	.burger.menu-open .top span:nth-child(1) {
+  		top: 18px;
+  		width: 0%;
+  		left: 50%;
+	}
+	.burger.menu-open .top span:nth-child(2) {
+  		transform: rotate(45deg);
+	}
+	.burger.menu-open .top span:nth-child(3) {
+  		transform: rotate(-45deg);
+	}
+	.burger.menu-open .top span:nth-child(4) {
+  		top: 18px;
+  		width: 0%;
+  		left: 50%;
+	}
+	.burger.menu-open .menu-close {
+  		display: block;
+	}
+
+	.menu__item {
+		padding: 15px;
+		
+		border-bottom : solid 2px $black;
+		&:first-child {
+			border-top: solid 2px $black;
+		}
+		
+	}
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	h1 {
+		letter-spacing: 0;
+	}
+	.owl-next img,
+	.owl-prev img {
+		max-width: 25px;
+	}
+	h2 {
+		letter-spacing: 0;
+	}
+	.talented .card {
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.carousel-elegant-item span {
+		font-size: 18px;
+	}
+	.deck {
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.pre-card {
+		font-size: 16px;
+		letter-spacing: 0;
+	}
+	.latest blockquote {
+		font-size: 16px;
+	}
+	.latest .owl-carousel .owl-nav button.owl-next {
+		right: -5px;
+	}
+	.latest .owl-carousel .owl-nav button.owl-prev {
+		left: -5px;
+	}
+	
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
