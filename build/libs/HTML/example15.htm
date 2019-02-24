@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>jQuery Carousel Evolution</title>
+    
+    <link rel="Stylesheet" type="text/css" href="carousel.css" />
+    
+    <script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.carousel-1.1.js"></script>
+        
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+        
+                
+            var myCarousel = $('.carousel').carousel();
+            
+            $('#prev').click(function(){
+                myCarousel.prev();                
+            });
+            
+            $('#next').click(function(){
+                myCarousel.next();                
+            });
+            
+            $('#goto').click(function(){
+                myCarousel.goTo(0);                
+            });
+            
+            $('#pause').click(function(){
+                myCarousel.pause();                
+            });
+            
+            $('#resume').click(function(){
+                myCarousel.resume();                
+            });                                    
+                    
+        });
+    </script>
+</head>
+<body>
+
+<div class="carousel"> <!-- BEGIN CAROUSEL -->
+    
+    <div class="slides"> <!-- BEGIN SLIDES -->
+    
+        <div> <!-- SLIDE ITEM -->
+            <a href="#"> 
+                <img src="gallery/slide-1.jpg" />
+            </a>            
+        </div>
+        
+        <div> <!-- SLIDE ITEM -->
+            <a href="#"> 
+                <img src="gallery/slide-2.jpg" />
+            </a>            
+        </div>
+        
+        <div> <!-- SLIDE ITEM -->
+            <a href="#"> 
+                <img src="gallery/slide-3.jpg" />
+            </a>            
+        </div>
+        
+        <div> <!-- SLIDE ITEM -->
+            <a href="#"> 
+                <img src="gallery/slide-4.jpg" />
+            </a>            
+        </div>
+        
+        <div> <!-- SLIDE ITEM -->
+            <a href="#"> 
+                <img src="gallery/slide-5.jpg" />
+            </a>            
+        </div>
+        
+        <div> <!-- SLIDE ITEM -->
+            <a href="#"> 
+                <img src="gallery/slide-6.jpg" />
+            </a>            
+        </div>
+        
+        <div> <!-- SLIDE ITEM -->
+            <a href="#"> 
+                <img src="gallery/slide-7.jpg" />
+            </a>            
+        </div>
+                       
+    </div> <!-- END SLIDES -->
+       
+</div> <!-- END CAROUSEL -->
+
+    <input id="prev" type="button" value="prev" />
+    
+    <input id="next" type="button" value="next" />
+    
+    <input id="goto" type="button" value="goto 1st" />
+    
+    <input id="pause" type="button" value="pause" />
+    
+    <input id="resume" type="button" value="resume" />
+</body>
+</html>
